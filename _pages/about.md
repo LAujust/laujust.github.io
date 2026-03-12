@@ -2,16 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. National Astronomical Observatories of Chinese. 
+subtitle: <a href='#'>National Astronomical Observatories of Chinese</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Beijing, China</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,10 +25,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-This is a sample description. 
+Hi, welcome to the homepage of Runduo Liang!
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am currently a PhD candidate at the National Astronomical Observatories of China (NAOC) and the Einstein Probe Science Center (EPSC), supervised by Weimin Yuan.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research focuses on time-domain high-energy astrophysics, particularly transients such as supernovae and compact binary mergers. I work on coordinating observations from EP together with other wide-field surveys to discover and study unique transient populations.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Previously, I obtained my M.S. from the University of Science and Technology of China (USTC), where my research focused on kilonova studies with AI using the Wide-Field Survey Telescope (WFST).
+
+Outside of research, I enjoy playing tennis, cycling, basketball, and traveling. I am also interested in artificial intelligence and currently building AI agents for applications across different fields.
