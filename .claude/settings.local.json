@@ -6,7 +6,10 @@
       "Bash(git pull:*)",
       "Bash(git rebase:*)",
       "Bash(git reset:*)",
-      "Bash(gh:*)"
+      "Bash(gh:*)",
+      "Bash(git status *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
