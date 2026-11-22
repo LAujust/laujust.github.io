@@ -6,7 +6,7 @@ nav: true
 nav_order: 2
 ---
 
-<p class="publication-source">Publications from my <a href="https://orcid.org/{{ site.data.socials.orcid_id }}">ORCID record</a>, grouped by year. Where a paper also has a preprint, both links appear in the same entry.</p>
+<p class="publication-source">My journal articles and preprints, grouped by year. Journal and arXiv versions share a single entry. See also my <a href="https://orcid.org/{{ site.data.socials.orcid_id }}">ORCID record</a>.</p>
 
 {% include bib_search.liquid %}
 

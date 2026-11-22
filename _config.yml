@@ -188,6 +188,7 @@ exclude:
   - _posts/2026-07-01-instruction
   - purgecss.config.js
   - README.md
+  - SITE-MAINTENANCE.md
   - readme_preview/
   - vendor
 keep_files:

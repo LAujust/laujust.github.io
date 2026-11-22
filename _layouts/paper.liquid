@@ -1,7 +1,13 @@
 ---
 ---
 <article class="paper-entry" id="{{ entry.key | escape }}">
-  <h3 class="paper-title"><a href="https://doi.org/{{ entry.doi | escape }}">{{ entry.title }}</a></h3>
+  {% assign paper_url = entry.url | strip %}
+  {% if entry.doi %}
+    {% assign paper_url = entry.doi | prepend: 'https://doi.org/' %}
+  {% elsif paper_url == empty and entry.eprint %}
+    {% assign paper_url = entry.eprint | prepend: 'https://arxiv.org/abs/' %}
+  {% endif %}
+  <h3 class="paper-title">{% if paper_url != empty %}<a href="{{ paper_url | escape }}">{{ entry.title }}</a>{% else %}{{ entry.title }}{% endif %}</h3>
   {% assign author_limit = site.max_author_limit | default: 3 %}
   {% assign author_count = entry.author_array | size %}
   {% capture byline %}{% include paper_authors.liquid authors=entry.author_array limit=author_limit %}{% endcapture %}
@@ -13,9 +19,10 @@
   {% else %}
     <p class="paper-authors">{{ byline | strip }}</p>
   {% endif %}
-  <p class="paper-venue"><cite>{{ entry.journal }}</cite>{% if entry.volume %} {{ entry.volume }}{% endif %}{% if entry.pages %}, {{ entry.pages }}{% endif %} ({{ entry.year }})</p>
+  <p class="paper-venue">{% if entry.journal %}<cite>{{ entry.journal }}</cite>{% elsif entry.eprint %}arXiv preprint {{ entry.eprint | escape }}{% endif %}{% if entry.volume %} {{ entry.volume }}{% endif %}{% if entry.pages %}, {{ entry.pages }}{% endif %} ({{ entry.year }})</p>
+  {% if entry.note %}<p class="paper-venue">{{ entry.note | escape }}</p>{% endif %}
   <div class="paper-links">
-    <a href="https://doi.org/{{ entry.doi | escape }}">DOI</a>
+    {% if entry.doi %}<a href="https://doi.org/{{ entry.doi | escape }}">DOI</a>{% endif %}
     {% if entry.eprint %}<a href="https://arxiv.org/abs/{{ entry.eprint | escape }}">arXiv</a>{% endif %}
     {% if entry.abstract %}<details><summary>Abstract</summary><p>{{ entry.abstract }}</p></details>{% endif %}
   </div>

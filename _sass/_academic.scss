@@ -27,7 +27,7 @@
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(rgba(10, 15, 20, 0.24), rgba(10, 15, 20, 0.36)), url("../img/sky/hubble-field.webp") center top / cover no-repeat;
+  background: #080a0d url("../img/sky/survey-field.webp") center top / cover no-repeat;
 }
 
 .skip-link {
@@ -315,6 +315,7 @@
 
 @media (max-width: 650px) {
   .academic-site { --sheet-width: calc(100% - 2rem); }
+  .academic-site::before { background-size: auto 18rem; }
   .site-masthead { height: 12rem; padding-bottom: 2.7rem; }
   .site-wordmark { border-width: 3px; font-size: 1.7rem; padding: 0.8rem 1.2rem; }
   .site-main { padding: 3rem 1.5rem; }

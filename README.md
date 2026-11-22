@@ -1,5 +1,7 @@
 # al-folio
 
+本站的更新与发布步骤见[个人主页维护指南（中文）](SITE-MAINTENANCE.md)。
+
 <div align="center">
 
 [![Preview](readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
