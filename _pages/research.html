@@ -1,0 +1,33 @@
+---
+layout: page
+permalink: /research/
+title: Research
+heading: My research
+nav: true
+nav_order: 1
+---
+
+<p class="research-lead">I study the brief flashes of light produced by stellar explosions and compact binary mergers. By comparing when a source appears in X-rays and how it brightens or fades in optical images, I look for clues to what produced it.</p>
+
+<section class="research-topic" aria-labelledby="xray-counterparts">
+  <h2 id="xray-counterparts">Optical counterparts to fast X-ray transients</h2>
+  <p>When Einstein Probe detects an X-ray flash, optical survey archives can tell us what happened at the same position in the days that followed. My collaborators and I used this approach to associate EP240506a with AT 2024ofs. The optical transient appeared on the outskirts of a galaxy at redshift 0.12, and its brightness and evolution are consistent with a core-collapse supernova. <a href="https://doi.org/10.3847/1538-4357/ae41b1">Read the ApJ paper</a>.</p>
+  <figure class="research-figure research-figure-wide">
+    <a href="{{ '/assets/img/research/ep240506a-localization.webp' | relative_url }}" aria-label="Open the EP240506a localization figure at full size">
+      <img src="{{ '/assets/img/research/ep240506a-localization.webp' | relative_url }}" width="1050" height="704" alt="Pan-STARRS images mark the host galaxy and the position of AT 2024ofs beside an Einstein Probe X-ray image of the field.">
+    </a>
+    <figcaption>Pan-STARRS and Einstein Probe observations of EP240506a and its optical counterpart. <a href="https://arxiv.org/html/2602.06321v1#S3.F2">Liang et al., Fig. 2</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</figcaption>
+  </figure>
+</section>
+
+<section class="research-topic" aria-labelledby="kilonova-classification">
+  <h2 id="kilonova-classification">Finding kilonovae in wide-field surveys</h2>
+  <figure class="research-figure research-figure-side">
+    <a href="{{ '/assets/img/research/wfst-kilonova-classification.webp' | relative_url }}" aria-label="Open the kilonova classification figure at full size">
+      <img src="{{ '/assets/img/research/wfst-kilonova-classification.webp' | relative_url }}" width="1049" height="960" loading="lazy" alt="Classifier accuracy for kilonovae and other transients as the number of simulated observations increases.">
+    </a>
+    <figcaption>How classification accuracy changes as simulated WFST observations accumulate. <a href="https://www.mdpi.com/2218-1997/10/1/10#fig_body_display_universe-10-00010-f005">Liang et al., Fig. 5</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</figcaption>
+  </figure>
+  <p>A gravitational-wave alert can leave hundreds of optical candidates to follow up. Kilonovae fade quickly, so deciding where to point a telescope matters in the first few nights.</p>
+  <p>I developed a temporal convolutional network that uses three nights of multiband photometry together with a distance estimate from the gravitational-wave signal. In simulated Wide Field Survey Telescope observations, our best model achieved 95% precision and 94% recall. <a href="https://doi.org/10.3390/universe10010010">Read the Universe paper</a> or <a href="https://github.com/LAujust/KN_classify">explore the classifier</a>.</p>
+</section>

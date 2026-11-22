@@ -77,6 +77,10 @@
   <script>
     initTheme();
   </script>
+{% else %}
+  <script>
+    function determineComputedTheme() { return "light"; }
+  </script>
 {% endif %}
 
 {% if page.map %}
