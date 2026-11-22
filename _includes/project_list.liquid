@@ -1,0 +1,14 @@
+{% assign projects = site.projects | sort: 'importance' %}
+<ul class="project-list">
+  {% for project in projects %}
+    <li class="project-entry">
+      <a class="project-title" href="{{ project.github | escape }}">{{ project.title | escape }}</a>
+      <p class="project-description">
+        {{ project.description | escape }}
+        {% if project.paper %}
+          <a class="project-paper" href="{{ project.paper | escape }}" aria-label="Read the {{ project.title | escape }} paper">Read the paper</a>
+        {% endif %}
+      </p>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,8 @@
+{%- for author in include.authors limit: include.limit -%}
+  {% unless forloop.first %}, {% endunless -%}
+  {% if site.scholar.last_name contains author.last and site.scholar.first_name contains author.first -%}
+    <strong>{{ author.first | escape }} {{ author.last | escape }}</strong>
+  {%- else -%}
+    {{ author.first | escape }} {{ author.last | escape }}
+  {%- endif -%}
+{%- endfor -%}

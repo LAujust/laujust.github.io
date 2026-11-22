@@ -2,35 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>National Astronomical Observatories of Chinese</a>
-
 profile:
-  align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Beijing, China</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  alt: Run-Duo Liang at Sydney Harbour
 ---
 
-Hi, welcome to the homepage of Runduo Liang!
+I’m a PhD candidate at the National Astronomical Observatories, Chinese Academy of Sciences, where I work with Weimin Yuan at the [Einstein Probe Science Center](https://ep.bao.ac.cn/ep/).
 
-I am currently a PhD candidate at the National Astronomical Observatories of China (NAOC) and the Einstein Probe Science Center (EPSC), supervised by Weimin Yuan.
+I study what happens when stars explode and compact objects merge. I use observations from Einstein Probe and wide-field optical surveys to look for the fading optical light that follows a fast X-ray transient. Finding that counterpart helps connect a brief X-ray signal to its source.
 
-My research focuses on time-domain high-energy astrophysics, particularly transients such as supernovae and compact binary mergers. I work on coordinating observations from EP together with other wide-field surveys to discover and study unique transient populations.
+During my master’s at the University of Science and Technology of China, I developed a [light-curve classifier](https://github.com/LAujust/KN_classify) to pick out kilonova candidates in simulated observations from the Wide Field Survey Telescope.
 
-Previously, I obtained my M.S. from the University of Science and Technology of China (USTC), where my research focused on kilonova studies with AI using the Wide-Field Survey Telescope (WFST).
-
-Outside of research, I enjoy playing tennis, cycling, basketball, and traveling. I am also interested in artificial intelligence and currently building AI agents for applications across different fields.
+Outside my research, I enjoy tennis, cycling, basketball, and travel. I also like experimenting with AI agents.
